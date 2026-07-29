@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "title": "One-Page Rural Business Plan Template",
+    "category": "Business Plan and Strategic Growth",
+    "description": "A simplified strategic planning framework designed specifically for sole proprietors and farm-adjacent businesses.",
+    "url": "https://example.com/one-page-business-plan",
+    "format": "template",
+    "audienceStage": "idea",
+    "lastReviewed": "2026-05-10"
+  },
+  {
+    "id": 2,
+    "title": "Feasibility Guide for Main Street Retail",
+    "category": "Business Plan and Strategic Growth",
+    "description": "Step-by-step checklist to evaluate local market demand, footprint needs, and startup viability in small towns.",
+    "url": "https://example.com/retail-feasibility",
+    "format": "guide",
+    "audienceStage": "startup",
+    "lastReviewed": "2026-06-01"
+  },
+  {
+    "id": 3,
+    "title": "Strategic Expansion Checklist for Regional Producers",
+    "category": "Business Plan and Strategic Growth",
+    "description": "How to scale operations from county-wide distribution to multi-state wholesale channels.",
+    "url": "https://example.com/regional-expansion-guide.pdf",
+    "format": "pdf",
+    "audienceStage": "growing",
+    "lastReviewed": "2026-04-18"
+  },
+  {
+    "id": 4,
+    "title": "Basic Cash Flow Projection Worksheet",
+    "category": "Financial Management",
+    "description": "Easy-to-use spreadsheet model for tracking seasonal revenues, farm/retail cycles, and monthly expenses.",
+    "url": "https://example.com/cash-flow-worksheet",
+    "format": "template",
+    "audienceStage": "startup",
+    "lastReviewed": "2026-07-02"
+  },
+  {
+    "id": 5,
+    "title": "Understanding Agricultural & Small Business Loans",
+    "category": "Financial Management",
+    "description": "Video walkthrough comparing local community bank financing, microloans, and SBA options.",
+    "url": "https://example.com/small-business-loans-video",
+    "format": "video",
+    "audienceStage": "idea",
+    "lastReviewed": "2026-03-22"
+  },
+  {
+    "id": 6,
+    "title": "Bookkeeping Essentials for Non-Accountants",
+    "category": "Financial Management",
+    "description": "A comprehensive primer on managing receipts, chart of accounts, and year-end tax prep without complex software.",
+    "url": "https://example.com/bookkeeping-guide",
+    "format": "guide",
+    "audienceStage": "established",
+    "lastReviewed": "2026-06-15"
+  },
+  {
+    "id": 7,
+    "title": "Grassroots Marketing for Rural Enterprises",
+    "category": "Marketing and Sales",
+    "description": "Proven local strategies including event cross-promotions, community sponsorship, and word-of-mouth flywheels.",
+    "url": "https://example.com/grassroots-marketing.pdf",
+    "format": "pdf",
+    "audienceStage": "startup",
+    "lastReviewed": "2026-05-30"
+  },
+  {
+    "id": 8,
+    "title": "Building a Direct-to-Consumer Local Brand",
+    "category": "Marketing and Sales",
+    "description": "Video guide on crafting your business story, local packaging techniques, and farm-to-table messaging.",
+    "url": "https://example.com/dtc-brand-video",
+    "format": "video",
+    "audienceStage": "growing",
+    "lastReviewed": "2026-07-10"
+  },
+  {
+    "id": 9,
+    "title": "Social Media Content Calendar Template",
+    "category": "Marketing and Sales",
+    "description": "Monthly planning grid customized for seasonal promotions, local holiday schedules, and customer stories.",
+    "url": "https://example.com/social-calendar-template",
+    "format": "template",
+    "audienceStage": "idea",
+    "lastReviewed": "2026-06-25"
+  },
+  {
+    "id": 10,
+    "title": "USDA Rural Energy for America Program (REAP) Guide",
+    "category": "Government Relations and Funding",
+    "description": "Overview of federal grants and loan guarantees available for renewable energy and energy efficiency upgrades.",
+    "url": "https://example.com/usda-reap-guide",
+    "format": "guide",
+    "audienceStage": "established",
+    "lastReviewed": "2026-04-12"
+  },
+  {
+    "id": 11,
+    "title": "State Grant Application Readiness Checklist",
+    "category": "Government Relations and Funding",
+    "description": "Prepare your financial records, UEI numbers, and project budgets before applying for economic development grants.",
+    "url": "https://example.com/grant-readiness-checklist.pdf",
+    "format": "pdf",
+    "audienceStage": "startup",
+    "lastReviewed": "2026-05-19"
+  },
+  {
+    "id": 12,
+    "title": "Navigating Local Zoning & Land Use Regulations",
+    "category": "Government Relations and Funding",
+    "description": "Reference portal on contacting county commissioners, requesting variances, and attending town planning boards.",
+    "url": "https://example.com/local-zoning-portal",
+    "format": "link",
+    "audienceStage": "idea",
+    "lastReviewed": "2026-02-14"
+  },
+  {
+    "id": 13,
+    "title": "Employee Handbook Template for Small Businesses",
+    "category": "HR and Culture",
+    "description": "Customizable employee handbook covering attendance, safety rules, workplace standards, and code of conduct.",
+    "url": "https://example.com/handbook-template",
+    "format": "template",
+    "audienceStage": "growing",
+    "lastReviewed": "2026-06-08"
+  },
+  {
+    "id": 14,
+    "title": "Seasonal Worker Hiring & Compliance Guide",
+    "category": "HR and Culture",
+    "description": "Guide to hiring part-time and seasonal labor legally, including Form I-9, state laws, and safety orientation.",
+    "url": "https://example.com/seasonal-hiring-guide.pdf",
+    "format": "pdf",
+    "audienceStage": "established",
+    "lastReviewed": "2026-05-01"
+  },
+  {
+    "id": 15,
+    "title": "Retaining Great Staff in Small Communities",
+    "category": "HR and Culture",
+    "description": "Video training on non-monetary incentives, flexible scheduling, and building a positive local work culture.",
+    "url": "https://example.com/staff-retention-video",
+    "format": "video",
+    "audienceStage": "growing",
+    "lastReviewed": "2026-03-17"
+  },
+  {
+    "id": 16,
+    "title": "Daily Operations Logbook & Checklist",
+    "category": "Productivity and Efficiency",
+    "description": "Printable operational checklists for opening/closing duties, inventory checks, and shift handoffs.",
+    "url": "https://example.com/ops-logbook-template",
+    "format": "template",
+    "audienceStage": "startup",
+    "lastReviewed": "2026-04-29"
+  },
+  {
+    "id": 17,
+    "title": "Streamlining Inventory for Rural Retailers",
+    "category": "Productivity and Efficiency",
+    "description": "Guide on reducing dead stock, managing reorder points, and handling supplier delivery delays.",
+    "url": "https://example.com/inventory-efficiency-guide",
+    "format": "guide",
+    "audienceStage": "established",
+    "lastReviewed": "2026-07-14"
+  },
+  {
+    "id": 18,
+    "title": "Low-Tech Route Optimization for Local Deliveries",
+    "category": "Productivity and Efficiency",
+    "description": "Simple tools and routines to plan efficient delivery routes across multi-county delivery regions.",
+    "url": "https://example.com/route-optimization-link",
+    "format": "link",
+    "audienceStage": "growing",
+    "lastReviewed": "2026-01-20"
+  },
+  {
+    "id": 19,
+    "title": "Sole Proprietorship vs. LLC Comparison Guide",
+    "category": "Legal Overview and Risk Management",
+    "description": "Plain-English walkthrough of asset protection, tax implications, and filing requirements for small businesses.",
+    "url": "https://example.com/llc-vs-soleprop-guide",
+    "format": "guide",
+    "audienceStage": "idea",
+    "lastReviewed": "2026-06-11"
+  },
+  {
+    "id": 20,
+    "title": "Commercial General Liability Insurance Primer",
+    "category": "Legal Overview and Risk Management",
+    "description": "PDF resource breaking down policy terms, rider options for public events, and property damage coverage.",
+    "url": "https://example.com/liability-insurance-primer.pdf",
+    "format": "pdf",
+    "audienceStage": "startup",
+    "lastReviewed": "2026-05-14"
+  },
+  {
+    "id": 21,
+    "title": "Independent Contractor Agreement Template",
+    "category": "Legal Overview and Risk Management",
+    "description": "Standard legal agreement for engaging freelance trade services, mechanics, or consultants.",
+    "url": "https://example.com/contractor-agreement-template",
+    "format": "template",
+    "audienceStage": "growing",
+    "lastReviewed": "2026-04-05"
+  },
+  {
+    "id": 22,
+    "title": "Family Business Succession Planning Roadmap",
+    "category": "Sustainability and Succession",
+    "description": "A structured step-by-step roadmap for transitioning management and ownership to family or key employees.",
+    "url": "https://example.com/succession-roadmap.pdf",
+    "format": "pdf",
+    "audienceStage": "established",
+    "lastReviewed": "2026-06-30"
+  },
+  {
+    "id": 23,
+    "title": "Energy Savings Audit Checklist for Commercial Buildings",
+    "category": "Sustainability and Succession",
+    "description": "Practical steps to cut heating, lighting, and refrigeration costs in older commercial structures.",
+    "url": "https://example.com/energy-audit-checklist",
+    "format": "template",
+    "audienceStage": "growing",
+    "lastReviewed": "2026-03-09"
+  },
+  {
+    "id": 24,
+    "title": "Disaster Preparedness & Business Continuity Video",
+    "category": "Sustainability and Succession",
+    "description": "Video guide on safeguarding physical assets, backing up records, and managing storm/power outages.",
+    "url": "https://example.com/disaster-prep-video",
+    "format": "video",
+    "audienceStage": "startup",
+    "lastReviewed": "2026-05-22"
+  },
+  {
+    "id": 25,
+    "title": "Low-Cost E-Commerce Setup for Local Merchants",
+    "category": "Websites, Ecommerce and Cybersecurity",
+    "description": "A beginner's guide to creating an online store with pickup options and simple card processing.",
+    "url": "https://example.com/ecommerce-setup-guide",
+    "format": "guide",
+    "audienceStage": "idea",
+    "lastReviewed": "2026-07-08"
+  },
+  {
+    "id": 26,
+    "title": "Small Business Cybersecurity Essentials",
+    "category": "Websites, Ecommerce and Cybersecurity",
+    "description": "Basic rules for protecting POS systems, customer email lists, and wifi networks from scams and malware.",
+    "url": "https://example.com/cybersecurity-essentials.pdf",
+    "format": "pdf",
+    "audienceStage": "startup",
+    "lastReviewed": "2026-06-19"
+  },
+  {
+    "id": 27,
+    "title": "Local SEO & Google Business Profile Optimization",
+    "category": "Websites, Ecommerce and Cybersecurity",
+    "description": "Video tutorial showing how to get your physical location and store hours listed accurately on online maps.",
+    "url": "https://example.com/local-seo-video",
+    "format": "video",
+    "audienceStage": "growing",
+    "lastReviewed": "2026-04-28"
+  }
+]

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rural Business Resource Hub</title>
+  <meta name="description" content="A browsable library of business tools, guides, and templates for rural small business owners and new entrepreneurs.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Keyboard Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div>
+        <a href="index.html" class="site-title">
+          <span>🌾 Rural Business Resource Hub</span>
+        </a>
+        <p class="site-tagline">Practical tools &amp; guides for local entrepreneurs</p>
+      </div>
+      <nav aria-label="Main Navigation">
+        <a href="index.html" class="nav-home-link" aria-current="page">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="main-content">
+    
+    <!-- Hero & Search Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="hero-title">Welcome Rural Business Owners &amp; Founders</h1>
+      <p class="hero-subtitle">
+        Explore our curated collection of business planning templates, financial guides, marketing resources, and legal checklists—designed for rural small businesses.
+      </p>
+
+      <!-- Instant Search Input -->
+      <div class="search-box-wrapper">
+        <label for="search-input" class="search-label">🔍 Search All Resources:</label>
+        <div class="search-input-group">
+          <input 
+            type="search" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Type a topic (e.g., cash flow, grants, marketing, LLC)..."
+            autocomplete="off"
+            aria-describedby="search-help"
+          >
+          <button type="button" id="clear-search-btn" class="search-clear-btn" style="display: none;" aria-label="Clear search input">Clear</button>
+        </div>
+        <p id="search-help" style="font-size: 0.9rem; color: var(--text-muted);">
+          Search across resource titles, descriptions, and categories.
+        </p>
+      </div>
+    </section>
+
+    <!-- Live Search Results Section (Visible when searching) -->
+    <section id="search-results-section" class="search-results-section" style="display: none;" aria-labelledby="search-results-heading">
+      <h2 id="search-results-heading" class="section-heading">Search Results</h2>
+      <div id="search-results-container" class="resource-list" role="region" aria-live="polite"></div>
+    </section>
+
+    <!-- Category Cards Section (Default View) -->
+    <section id="categories-section" aria-labelledby="categories-heading">
+      <h2 id="categories-heading" class="section-heading">Browse by Category</h2>
+      <div id="category-grid" class="category-grid">
+        <!-- 9 Category cards dynamically populated or structured -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><strong>Rural Business Resource Hub</strong> &mdash; Free &amp; Open Small Business Library</p>
+      <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #94a3b8;">
+        Designed for simple offline viewing and GitHub Pages hosting. No database or tracking required.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script for Homepage functionality -->
+  <script>
+    // List of the 9 required categories
+    const categoriesList = [
+      "Business Plan and Strategic Growth",
+      "Financial Management",
+      "Marketing and Sales",
+      "Government Relations and Funding",
+      "HR and Culture",
+      "Productivity and Efficiency",
+      "Legal Overview and Risk Management",
+      "Sustainability and Succession",
+      "Websites, Ecommerce and Cybersecurity"
+    ];
+
+    let allResources = [];
+
+    // DOM Elements
+    const categoryGrid = document.getElementById('category-grid');
+    const searchInput = document.getElementById('search-input');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    const searchResultsSection = document.getElementById('search-results-section');
+    const searchResultsContainer = document.getElementById('search-results-container');
+    const categoriesSection = document.getElementById('categories-section');
+
+    // 1. Initial Setup: Render the 9 Category Cards immediately
+    function renderCategoryCards() {
+      categoryGrid.innerHTML = '';
+      categoriesList.forEach((catName, index) => {
+        // Count matching resources if loaded
+        const count = allResources.filter(r => r.category === catName).length;
+        const countText = allResources.length > 0 ? `${count} resource${count === 1 ? '' : 's'}` : 'View resources';
+        
+        const card = document.createElement('a');
+        card.href = `category.html?cat=${encodeURIComponent(catName)}`;
+        card.className = 'category-card';
+        card.setAttribute('aria-label', `${catName}, ${countText}`);
+
+        card.innerHTML = `
+          <div>
+            <div class="category-number">Category ${index + 1}</div>
+            <h3 class="category-name">${escapeHtml(catName)}</h3>
+          </div>
+          <div class="category-meta">
+            <span>📁 ${countText} &rarr;</span>
+          </div>
+        `;
+        categoryGrid.appendChild(card);
+      });
+    }
+
+    // 2. Fetch resource data from resources.json
+    async function loadResources() {
+      try {
+        const response = await fetch('resources.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        allResources = await response.json();
+        // Re-render category cards with accurate counts
+        renderCategoryCards();
+      } catch (error) {
+        console.warn('Unable to load resources.json via fetch:', error);
+        // Display friendly notice if fetch fails (e.g. running via file:// protocol without web server)
+        const warningBox = document.createElement('div');
+        warningBox.className = 'no-results';
+        warningBox.style.marginBottom = '1.5rem';
+        warningBox.innerHTML = `
+          <div class="no-results-title">💡 Note for Local File Preview</div>
+          <p class="no-results-text">
+            Browsers restrict loading external JSON files when opening HTML files directly from your hard drive (file:// protocol).
+            <br>To view live data, please run a local web server (e.g., <code>python -m http.server</code>) or view after hosting on GitHub Pages.
+          </p>
+        `;
+        document.getElementById('main-content').prepend(warningBox);
+      }
+    }
+
+    // 3. Handle Live Search Filtering
+    function handleSearch() {
+      const query = searchInput.value.trim().toLowerCase();
+
+      if (query.length > 0) {
+        clearSearchBtn.style.display = 'block';
+        categoriesSection.style.display = 'none';
+        searchResultsSection.style.display = 'block';
+
+        const filtered = allResources.filter(res => {
+          const titleMatches = res.title.toLowerCase().includes(query);
+          const descMatches = res.description.toLowerCase().includes(query);
+          const catMatches = res.category.toLowerCase().includes(query);
+          return titleMatches || descMatches || catMatches;
+        });
+
+        renderSearchResults(filtered, query);
+      } else {
+        clearSearchBtn.style.display = 'none';
+        searchResultsSection.style.display = 'none';
+        categoriesSection.style.display = 'block';
+      }
+    }
+
+    // 4. Render Search Results Card UI
+    function renderSearchResults(results, query) {
+      if (results.length === 0) {
+        searchResultsContainer.innerHTML = `
+          <div class="no-results" role="status">
+            <div class="no-results-title">No matching resources found</div>
+            <p class="no-results-text">
+              We couldn't find any resources matching "<strong>${escapeHtml(query)}</strong>".
+              Try searching with different keywords or browse our 9 categories below.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      searchResultsContainer.innerHTML = results.map(res => `
+        <article class="resource-card">
+          <div class="resource-card-header">
+            <h3 class="resource-title">${escapeHtml(res.title)}</h3>
+            <div class="resource-badges">
+              <span class="badge badge-${escapeHtml(res.format.toLowerCase())}">${escapeHtml(res.format)}</span>
+              <span class="badge badge-stage">Stage: ${escapeHtml(res.audienceStage)}</span>
+            </div>
+          </div>
+          <p class="resource-description">${escapeHtml(res.description)}</p>
+          <div class="resource-footer">
+            <div>
+              <span class="resource-date">Reviewed: ${escapeHtml(res.lastReviewed)}</span>
+              <span style="margin: 0 0.5rem; color: #cbd5e1;">|</span>
+              <a href="category.html?cat=${encodeURIComponent(res.category)}" style="color: var(--accent-blue); font-weight:700;">${escapeHtml(res.category)}</a>
+            </div>
+            <a href="${escapeHtml(res.url)}" target="_blank" rel="noopener noreferrer" class="resource-link-btn">
+              Open Resource ↗
+            </a>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Helper: Prevent XSS by escaping user/JSON input strings
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    // Event Listeners
+    searchInput.addEventListener('input', handleSearch);
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      handleSearch();
+      searchInput.focus();
+    });
+
+    // Run on load
+    renderCategoryCards();
+    loadResources();
+  </script>
+</body>
+</html>
