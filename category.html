@@ -3,102 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Category Resources - Rural Business Resource Hub</title>
-  <meta name="description" content="Explore filtered business resources, templates, and guides for rural small businesses.">
+  <title>Chapter View | The Rural Business Almanac</title>
+  <meta name="description" content="Chapter resource view for The Rural Business Almanac by CEDA &amp; RBIL.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Keyboard Skip Link for Accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- Keyboard Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to Chapter Content</a>
 
-  <!-- Header -->
+  <!-- Sticky Header -->
   <header class="site-header">
     <div class="header-container">
-      <div>
-        <a href="index.html" class="site-title">
-          <span>🌾 Rural Business Resource Hub</span>
-        </a>
-        <p class="site-tagline">Practical tools &amp; guides for local entrepreneurs</p>
-      </div>
-      <nav aria-label="Main Navigation">
-        <a href="index.html" class="nav-home-link">&larr; Back to Categories</a>
-      </nav>
+      <a href="index.html" class="header-brand">
+        <span class="ceda-mark">CEDA</span>
+        <span class="header-title-text">The Rural Business Almanac</span>
+      </a>
+      <a href="index.html" class="header-outbound-link">
+        &larr; Back to All Chapters
+      </a>
     </div>
   </header>
 
-  <!-- Main Content Area -->
-  <main id="main-content" class="main-content">
-
-    <!-- Category Header & Breadcrumb -->
-    <header class="category-header">
-      <nav class="breadcrumb" aria-label="Breadcrumb navigation">
-        <a href="index.html">Home</a> &rsaquo; <span id="breadcrumb-cat">Category</span>
-      </nav>
-      <h1 id="category-title" class="category-title">Loading Category...</h1>
-      <p id="category-description" style="color: var(--text-muted); font-size: 1.1rem;">
-        Showing resources tailored for small business owners and entrepreneurs.
-      </p>
+  <!-- Main Content: Chapter Detailed View -->
+  <main id="main-content">
+    
+    <!-- Chapter Banner with Ridgeline Transition -->
+    <header id="chapter-banner" class="category-page-banner chapter-01">
+      <div class="chapter-inner">
+        <div class="breadcrumb-almanac">
+          <a href="index.html">The Rural Business Almanac</a> &rsaquo; <span id="breadcrumb-cat">Chapter View</span>
+        </div>
+        <h1 id="category-title" class="category-page-title">Chapter View</h1>
+        <p id="category-description" style="font-family: var(--font-sans); font-size: 1.25rem; max-width: 45ch; opacity: 0.88;">
+          Practical tools and guidance curated by CEDA and the Rural Business Innovation Lab.
+        </p>
+      </div>
     </header>
 
-    <!-- Interactive Filters Section -->
-    <section class="filter-toolbar" aria-labelledby="filter-heading">
-      <h2 id="filter-heading" class="filter-toolbar-title">Filter Category Resources</h2>
-      
-      <!-- Format Filter -->
-      <div class="filter-group">
-        <span class="filter-group-label" id="format-label">Resource Format:</span>
-        <div class="filter-buttons" role="group" aria-labelledby="format-label" id="format-buttons">
-          <button type="button" class="filter-btn active" data-filter-type="format" data-value="all">All Formats</button>
-          <button type="button" class="filter-btn" data-filter-type="format" data-value="pdf">PDF</button>
-          <button type="button" class="filter-btn" data-filter-type="format" data-value="video">Video</button>
-          <button type="button" class="filter-btn" data-filter-type="format" data-value="template">Template</button>
-          <button type="button" class="filter-btn" data-filter-type="format" data-value="guide">Guide</button>
-          <button type="button" class="filter-btn" data-filter-type="format" data-value="link">Link</button>
+    <div style="max-width: 1050px; margin: 0 auto; padding: 0 1.5rem 6rem 1.5rem;">
+      <!-- Interactive Filter Controls -->
+      <section class="filter-toolbar-almanac" aria-labelledby="filter-heading">
+        <h2 id="filter-heading" style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 1.25rem; color: var(--dark-text);">Filter Chapter Resources</h2>
+        
+        <div style="margin-bottom: 1rem;">
+          <span style="font-weight: 600; font-size: 0.95rem; margin-right: 0.5rem;">Format:</span>
+          <span id="format-buttons">
+            <button type="button" class="filter-btn-almanac active" data-filter-type="format" data-value="all">All</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="format" data-value="pdf">PDF</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="format" data-value="video">Video</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="format" data-value="template">Template</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="format" data-value="guide">Guide</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="format" data-value="link">Link</button>
+          </span>
         </div>
-      </div>
 
-      <!-- Audience Stage Filter -->
-      <div class="filter-group">
-        <span class="filter-group-label" id="stage-label">Audience Stage:</span>
-        <div class="filter-buttons" role="group" aria-labelledby="stage-label" id="stage-buttons">
-          <button type="button" class="filter-btn active" data-filter-type="stage" data-value="all">All Stages</button>
-          <button type="button" class="filter-btn" data-filter-type="stage" data-value="idea">Idea Stage</button>
-          <button type="button" class="filter-btn" data-filter-type="stage" data-value="startup">Startup</button>
-          <button type="button" class="filter-btn" data-filter-type="stage" data-value="growing">Growing</button>
-          <button type="button" class="filter-btn" data-filter-type="stage" data-value="established">Established</button>
+        <div>
+          <span style="font-weight: 600; font-size: 0.95rem; margin-right: 0.5rem;">Stage:</span>
+          <span id="stage-buttons">
+            <button type="button" class="filter-btn-almanac active" data-filter-type="stage" data-value="all">All</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="stage" data-value="idea">Idea</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="stage" data-value="startup">Startup</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="stage" data-value="growing">Growing</button>
+            <button type="button" class="filter-btn-almanac" data-filter-type="stage" data-value="established">Established</button>
+          </span>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Resource Results List -->
-    <section aria-labelledby="resources-list-heading">
-      <h2 id="resources-list-heading" class="sr-only" style="position:absolute; left:-9999px;">Category Resources</h2>
-      <div id="resource-list" class="resource-list" role="region" aria-live="polite">
-        <!-- Resource cards rendered via JavaScript -->
-      </div>
-    </section>
+      <!-- Resource List Output -->
+      <section aria-labelledby="resource-list-heading">
+        <h2 id="resource-list-heading" class="sr-only" style="position:absolute; left:-9999px;">Chapter Resources</h2>
+        <div id="resource-list" class="chapter-resource-list" role="region" aria-live="polite"></div>
+      </section>
+    </div>
 
   </main>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
-      <p><strong>Rural Business Resource Hub</strong> &mdash; Free &amp; Open Small Business Library</p>
-      <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #94a3b8;">
-        Designed for simple offline viewing and GitHub Pages hosting. No database or tracking required.
-      </p>
+      <p style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem; color: #ffffff;">The Rural Business Almanac</p>
+      <p style="margin-bottom: 0.5rem; opacity: 0.8;">A publication of Community Economic Development Associates (CEDA)</p>
     </div>
   </footer>
 
-  <!-- Script for Category Filtering -->
+  <!-- Script for Category View -->
   <script>
-    // Selected Filter State
+    const categoryConfig = {
+      "Business Plan and Strategic Growth": { class: "chapter-01 chapter-text-light", darkText: false },
+      "Financial Management": { class: "chapter-02 chapter-text-dark", darkText: true },
+      "Marketing and Sales": { class: "chapter-03 chapter-text-light", darkText: false },
+      "Government Relations and Funding": { class: "chapter-04 chapter-text-dark", darkText: true },
+      "HR and Culture": { class: "chapter-05 chapter-text-dark", darkText: true },
+      "Productivity and Efficiency": { class: "chapter-06 chapter-text-dark", darkText: true },
+      "Legal Overview and Risk Management": { class: "chapter-07 chapter-text-light", darkText: false },
+      "Sustainability and Succession": { class: "chapter-08 chapter-text-dark", darkText: true },
+      "Websites, Ecommerce and Cybersecurity": { class: "chapter-09 chapter-text-light", darkText: false }
+    };
+
     let currentCategory = "";
     let categoryResources = [];
     let selectedFormat = "all";
     let selectedStage = "all";
 
-    // DOM Elements
+    const chapterBannerEl = document.getElementById('chapter-banner');
     const categoryTitleEl = document.getElementById('category-title');
     const categoryDescEl = document.getElementById('category-description');
     const breadcrumbCatEl = document.getElementById('breadcrumb-cat');
@@ -106,49 +113,35 @@
     const formatButtonsEl = document.getElementById('format-buttons');
     const stageButtonsEl = document.getElementById('stage-buttons');
 
-    // 1. Extract URL Parameters
     function getCategoryFromUrl() {
       const params = new URLSearchParams(window.location.search);
       return params.get('cat') || "Business Plan and Strategic Growth";
     }
 
-    // 2. Fetch resource data from resources.json
     async function initCategoryPage() {
       currentCategory = getCategoryFromUrl();
       
-      // Update Headings & Page Title
-      document.title = `${currentCategory} - Rural Business Resource Hub`;
+      document.title = `${currentCategory} | The Rural Business Almanac`;
       breadcrumbCatEl.textContent = currentCategory;
       categoryTitleEl.textContent = currentCategory;
 
+      const config = categoryConfig[currentCategory] || categoryConfig["Business Plan and Strategic Growth"];
+      chapterBannerEl.className = `category-page-banner ${config.class}`;
+
       try {
         const response = await fetch('resources.json');
-        if (!response.ok) {
-          throw new Error(`HTTP status: ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`HTTP status ${response.status}`);
         const data = await response.json();
         
-        // Filter resources belonging strictly to this category
         categoryResources = data.filter(r => r.category.toLowerCase() === currentCategory.toLowerCase());
-        
-        categoryDescEl.textContent = `Browsing ${categoryResources.length} curated resource${categoryResources.length === 1 ? '' : 's'} under "${currentCategory}".`;
+        categoryDescEl.textContent = `Browsing ${categoryResources.length} resource${categoryResources.length === 1 ? '' : 's'} in this chapter.`;
 
         renderFilteredResources();
       } catch (error) {
         console.warn('Unable to load resources.json:', error);
-        resourceListEl.innerHTML = `
-          <div class="no-results">
-            <div class="no-results-title">💡 Local File Preview Notice</div>
-            <p class="no-results-text">
-              Browsers restrict fetching JSON files when running directly from disk (file:// protocol).
-              <br>To view resources live on your computer, please run a local web server (e.g. <code>python -m http.server</code>) or upload to GitHub Pages.
-            </p>
-          </div>
-        `;
       }
     }
 
-    // 3. Render filtered resources based on selected buttons
     function renderFilteredResources() {
       const filtered = categoryResources.filter(res => {
         const matchesFormat = (selectedFormat === 'all') || (res.format.toLowerCase() === selectedFormat.toLowerCase());
@@ -157,80 +150,41 @@
       });
 
       if (filtered.length === 0) {
-        resourceListEl.innerHTML = `
-          <div class="no-results" role="status">
-            <div class="no-results-title">No resources match your filters</div>
-            <p class="no-results-text">
-              There are no resources matching 
-              ${selectedFormat !== 'all' ? `Format: "<strong>${escapeHtml(selectedFormat.toUpperCase())}</strong>"` : ''} 
-              ${selectedFormat !== 'all' && selectedStage !== 'all' ? 'and' : ''} 
-              ${selectedStage !== 'all' ? `Stage: "<strong>${escapeHtml(selectedStage.toUpperCase())}</strong>"` : ''}.
-              <br><br>
-              <button type="button" onclick="resetFilters()" class="filter-btn active" style="cursor:pointer;">Reset All Filters</button>
-            </p>
-          </div>
-        `;
+        resourceListEl.innerHTML = `<p style="padding: 2rem 0; color: var(--dark-text);">No resources match the selected filters.</p>`;
         return;
       }
 
       resourceListEl.innerHTML = filtered.map(res => `
-        <article class="resource-card">
-          <div class="resource-card-header">
-            <h3 class="resource-title">${escapeHtml(res.title)}</h3>
-            <div class="resource-badges">
-              <span class="badge badge-${escapeHtml(res.format.toLowerCase())}">${escapeHtml(res.format)}</span>
-              <span class="badge badge-stage">Stage: ${escapeHtml(res.audienceStage)}</span>
+        <a href="${escapeHtml(res.url)}" target="_blank" rel="noopener noreferrer" class="chapter-resource-row" style="color:var(--dark-text); background-color: rgba(34,28,20,0.04);">
+          <div>
+            <span class="chapter-resource-title" style="color:var(--dark-text);">${escapeHtml(res.title)}</span>
+            <div style="font-size:0.95rem; opacity:0.75; font-family:var(--font-sans); margin-top:0.35rem;">
+              ${escapeHtml(res.description)}
             </div>
           </div>
-          <p class="resource-description">${escapeHtml(res.description)}</p>
-          <div class="resource-footer">
-            <span class="resource-date">Last reviewed: ${escapeHtml(res.lastReviewed)}</span>
-            <a href="${escapeHtml(res.url)}" target="_blank" rel="noopener noreferrer" class="resource-link-btn">
-              Open Resource ↗
-            </a>
-          </div>
-        </article>
+          <span class="chapter-resource-badge" style="background-color:var(--dark-text); color:var(--light-text);">${escapeHtml(res.format)}</span>
+        </a>
       `).join('');
     }
 
-    // 4. Setup Button Click Event Listeners
-    function setupFilterListeners() {
-      formatButtonsEl.addEventListener('click', (e) => {
-        const btn = e.target.closest('.filter-btn');
-        if (!btn) return;
-        
-        formatButtonsEl.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        selectedFormat = btn.getAttribute('data-value');
-        renderFilteredResources();
-      });
-
-      stageButtonsEl.addEventListener('click', (e) => {
-        const btn = e.target.closest('.filter-btn');
-        if (!btn) return;
-
-        stageButtonsEl.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        selectedStage = btn.getAttribute('data-value');
-        renderFilteredResources();
-      });
-    }
-
-    // Reset filters helper function
-    function resetFilters() {
-      selectedFormat = 'all';
-      selectedStage = 'all';
-      
-      formatButtonsEl.querySelectorAll('.filter-btn').forEach(b => {
-        b.classList.toggle('active', b.getAttribute('data-value') === 'all');
-      });
-      stageButtonsEl.querySelectorAll('.filter-btn').forEach(b => {
-        b.classList.toggle('active', b.getAttribute('data-value') === 'all');
-      });
+    formatButtonsEl.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-btn-almanac');
+      if (!btn) return;
+      formatButtonsEl.querySelectorAll('.filter-btn-almanac').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedFormat = btn.getAttribute('data-value');
       renderFilteredResources();
-    }
+    });
 
-    // Helper: Escape HTML string
+    stageButtonsEl.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-btn-almanac');
+      if (!btn) return;
+      stageButtonsEl.querySelectorAll('.filter-btn-almanac').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedStage = btn.getAttribute('data-value');
+      renderFilteredResources();
+    });
+
     function escapeHtml(str) {
       if (!str) return '';
       return String(str)
@@ -241,8 +195,6 @@
         .replace(/'/g, "&#039;");
     }
 
-    // Initialize Page
-    setupFilterListeners();
     initCategoryPage();
   </script>
 </body>
